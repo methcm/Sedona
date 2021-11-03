@@ -7,231 +7,231 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#" aria-label="перейти на главную страницу">
-        <img src="icons/logo.svg" width="138" height="70" alt="лого седона">
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="page-header__logo" href="#" aria-label="перейти на главную страницу">
+        <img class="page-header__logo-image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
       </a>
-      <ul>
-        <li>
-          <a href="#" aria-label="перейти на страницу информация">
-            <span>Информация</span>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу информация">
+            <span class="site-list__link-text">Информация</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу фото и видео">
-            <span>Фото и видео</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу фото и видео">
+            <span class="site-list__link-text">Фото и видео</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу карты штата">
-            <span>Карты штата</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу карты штата">
+            <span class="site-list__link-text">Карты штата</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу гостиницы">
-            <span>Гостиницы</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу гостиницы">
+            <span class="site-list__link-text">Гостиницы</span>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
-      <h2>Фильтр поиска</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
-          <legeng>Инфраструктура:</legeng>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="swimingpool" checked>
-                <span>бассейн</span>
+  <main class="page-main">
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр поиска</h2>
+      <form class="filter__form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="filter__fieldset">
+          <legeng class="filter__title">Инфраструктура:</legeng>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="swimingpool" checked>
+                <span class="filter__text">бассейн</span>
               </label>
             </li>
-            <li>
-              <label>
-                <input type="checkbox" name="parking">
-                <span>парковка</span>
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="parking">
+                <span class="filter__text">парковка</span>
               </label>
             </li>
-            <li>
-              <label>
-                <input type="checkbox" name="wi-fi">
-                <span>wi-fi</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <ul>
-            <li>
-              <label>
-                <input type="checkbox" name="hotel" checked>
-                <span>гостиница</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="motel" checked>
-                <span>мотель</span>
-              </label>
-            </li>
-            <li>
-              <label>
-                <input type="checkbox" name="apartments" checked>
-                <span>апартаменты</span>
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="wi-fi">
+                <span class="filter__text">wi-fi</span>
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>стоимость в сутки (Р):</legend>
-          <div>
-            <p>ОТ 0</p>
-            <p>ДО 3000</p>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title">Тип жилья:</legend>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="hotel" checked>
+                <span class="filter__text">гостиница</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="motel" checked>
+                <span class="filter__text">мотель</span>
+              </label>
+            </li>
+            <li class="filter__item">
+              <label class="filter__label">
+                <input class="filter__input" type="checkbox" name="apartments" checked>
+                <span class="filter__text">апартаменты</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title">стоимость в сутки (Р):</legend>
+          <div class="filter__wrapper">
+            <p class="filter__text-wrapper">ОТ 0</p>
+            <p class="filter__text-wrapper">ДО 3000</p>
           </div>
-          <input type="range" min="0" max="3000">
-          <button type="submit">показать</button>
+          <input class="filter__range" type="range" min="0" max="3000">
+          <button class="filter__submit-button" type="submit">показать</button>
         </fieldset>
       </form>
     </section>
-    <section>
-      <div>
-        <h2>результат поиска</h2>
-        <p>Найдено:3</p>
-        <p>Сортировка</p>
+    <section class="result">
+      <div class="result__wrapper">
+        <h2 class="visually-hidden">результат поиска</h2>
+        <p class="result__text-search">Найдено:3</p>
+        <p class="result__text-sorting">Сортировка</p>
       </div>
-      <ul>
-        <li>
-          <a href="#" aria-label="сортировать параметры по цене">
-            <span>по цене</span>
+      <ul class="result__list">
+        <li class="result__item">
+          <a class="result__link" href="#" aria-label="сортировать параметры по цене">
+            <span class="result__text">по цене</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label=" сортировать парметры по типу">
-            <span>по типу</span>
+        <li class="result__item">
+          <a class="result__link" href="#" aria-label=" сортировать парметры по типу">
+            <span class="result__text">по типу</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="сортировать параметры по рейтингу">
-            <span>по рейтингу</span>
+        <li class="result__item">
+          <a class="result__link" href="#" aria-label="сортировать параметры по рейтингу">
+            <span class="result__text">по рейтингу</span>
           </a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <article>
-            <img src="images/amara-resort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-            <div>
-              <a href="#" aria-label="перейти на страницу отеля">
-                <span>AMARA RESORT & SPA</span>
+      <ul class="result__list-hotels">
+        <li class="result__item-hotels">
+          <article class="result-card">
+            <img class="result-card__image" src="images/amara-resort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+            <div class="result-card__wrapper">
+              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="result-card__text-link">AMARA RESORT & SPA</span>
               </a>
-              <p>гостиница от 4000 р.</p>
-              <a href="#" aria-label="показать подробную информацию">
-                <span>подробнее</span>
+              <p class="result-card__text">гостиница от 4000 р.</p>
+              <a class="result-card__info-link" href="#" aria-label="показать подробную информацию">
+                <span class="result-card__details">подробнее</span>
               </a>
-              <a href="#" aria-label="забронировать отель">
-                <span>забронировать</span>
+              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="result-card__reserv">забронировать</span>
               </a>
             </div>
-            <div>
-              <div>
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="result-card__grade-wrapper">
+              <div class="result-card__shape-wrapper">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p>рейтинг: 8,5</p>
+              <p class="result-card__text-rating">рейтинг: 8,5</p>
             </div>
           </article>
         </li>
-        <li>
-          <article>
-            <img src="images/desert-quail.jpg" width="135" height="90" alt="DESERT QUAIL">
-            <div>
-              <a href="#" aria-label="перейти на страницу отеля">
-                <span>DESERT QUAIL INN</span>
+        <li class="result__item-hotels">
+          <article class="result-card">
+            <img class="result-card__image" src="images/desert-quail.jpg" width="135" height="90" alt="DESERT QUAIL">
+            <div class="result-card__wrapper">
+              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="result-card__text-link">DESERT QUAIL INN</span>
               </a>
-              <p>мотель от 3500 р.</p>
-              <a href="#" aria-label="показать подроную информацию">
-                <span>подробнее</span>
+              <p class="result-card__text">мотель от 3500 р.</p>
+              <a class="result-card__info-link" href="#" aria-label="показать подроную информацию">
+                <span class="result-card__details">подробнее</span>
               </a>
-              <a href="#" aria-label="забронировать отель">
-                <span>забронировать</span>
+              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="result-card__reserv">забронировать</span>
               </a>
             </div>
-            <div>
-              <div>
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="result-card__grade-wrapper">
+              <div class="result-card__shape-wrapper">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p>рейтинг: 8,9</p>
+              <p class="result-card__text-rating">рейтинг: 8,9</p>
             </div>
           </article>
         </li>
-        <li>
-          <article>
-            <img src="images/villas-at-poco.jpg" width="135" height="90" alt="VILLAS AT POCO">
-            <div>
-              <a href="#" aria-label="перейти на страницу отеля">
-                <span>VILLAS AT POCO DIABLO</span>
+        <li class="result__item-hotels">
+          <article class="result-card">
+            <img class="result-card__image" src="images/villas-at-poco.jpg" width="135" height="90" alt="VILLAS AT POCO">
+            <div class="result-card__wrapper">
+              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="result-card__text-link">VILLAS AT POCO DIABLO</span>
               </a>
-              <p>апартаменты от 2000 р.</p>
-              <a href="#" aria-label="показать подробную информацию">
-                <span">подробнее</span>
+              <p class="result-card__text">апартаменты от 2000 р.</p>
+              <a class="result-card__info-link" href="#" aria-label="показать подробную информацию">
+                <span class="result-card__details">подробнее</span>
               </a>
-              <a href="#" aria-label="забронировать отель">
-                <span>забронировать</span>
+              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="result-card__reserv">забронировать</span>
               </a>
             </div>
-            <div>
-              <div>
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="result-card__grape-wrapper">
+              <div class="result-card__shape-wrapper">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p>рейтинг: 9,2</p>
+              <p class="result-card__text-rating">рейтинг: 9,2</p>
             </div>
           </article>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-    <div>
-      <h2>как с нами связаться</h2>
-      <p>#Visitsedona</p>
-      <a href="tel:+7(495)6660166">
-        <span>ТЕЛ: +7(495) 666-01-66</span>
+  <footer class="page__footer">
+    <div class="connection">
+      <h2 class="connection__title">как с нами связаться</h2>
+      <p class="conection__text">#Visitsedona</p>
+      <a class="connection__link" href="tel:+7(495)6660166">
+        <span class="connection__phone">ТЕЛ: +7(495) 666-01-66</span>
       </a>
     </div>
-    <nav>
-      <h2>Социальные сети</h2>
-      <ul>
-        <li>
-          <a href="#" aria-label="перейти на страницу в твиттер">
-            <img src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
+    <nav class="social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в твиттер">
+           <img class="social__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу в фейсбук">
-            <img src="icons/fb.svg" width="12" height="22" aria-hidden="true">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в фейсбук">
+            <img class="social__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу в ютуб">
-            <img src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в ютуб">
+            <img class="social__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
           </a>
         </li>
       </ul>
     </nav>
-    <div>
-      <h2>Разработано:</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <span>Website by</span>
-        <img src="icons/logo-htmlacademy.svg" width="115" height="41" alt="лого академии">
+    <div class="developed">
+      <h2 class="developed__title">Разработано:</h2>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на страницу интенсива">
+        <span class="developed__text">Website by</span>
+        <img class="developed__icon" src="icons/logo-htmlacademy.svg" width="115" height="41" alt="лого академии">
       </a>
     </div>
   </footer>

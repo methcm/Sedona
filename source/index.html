@@ -7,186 +7,186 @@
   <title>Document</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#" aria-label="перейти на главную страницу">
-        <img src="icons/logo.svg" width="138" height="70" alt="лого седона">
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="page-header__logo" href="#" aria-label="перейти на главную страницу">
+        <img class="page-header__logo-image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
       </a>
-      <ul>
-        <li>
-          <a href="#" aria-label="перейти на страницу информация">
-            <span>Информация</span>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу информация">
+            <span class="site-list__link-text">Информация</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label=" перейти на страницу фото и видео">
-            <span>Фото и видео</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу фото и видео">
+            <span class="site-list__link-text">Фото и видео</span>
           </a>
         </li>
-        <li>
-          <a href="#" aria-label=" перейти на страницу карты штата">
-            <span>Карты штата</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="#" aria-label="перейти на страницу карты штата">
+            <span class="site-list__link-text">Карты штата</span>
           </a>
         </li>
-        <li>
-          <a href="hotels.html" aria-label="перейти на страницу гостиницы">
-            <span>Гостиницы</span>
+        <li class="site-list__item">
+          <a class="site-list__link" href="hotels.html" aria-label="перейти на страницу гостиницы">
+            <span class="site-list__link-text">Гостиницы</span>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main>
-    <h1>"Sedona"</h1>
-    <section>
-      <h2>"Welcome"</h2>
-      <p>Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+  <main class="page-main">
+    <h1 class="visually-hidden">"Sedona"</h1>
+    <section class="welcome">
+      <h2 class="welcome__title">Welcome</h2>
+      <p class="welcome__text">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+      <p class="welcome__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
-    <section>
-      <div>
-        <div>
-          <div>
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+    <section class="benefits">
+      <div class="benefits__block">
+        <div class="benefits__wrapper">
+          <div class="benefits__info">
+            <h3 class="benefits__title">Настоящий городок</h3>
+            <p class="benefits__text">— №1 —</p>
+            <p class="benefits__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <div>
-            <img src="images/real-town.jpg" width="800" height="256" alt="городок">
+          <div class="benefits__image-container">
+            <img class="benefits__image" src="images/real-town.jpg" width="800" height="256" alt="городок">
           </div>
         </div>
         <!-- Карточки жилье и тд -->
-        <ul>
-          <li>
-            <article>
-              <img src="icons/home.svg" width="75" height="72" aria-hidden="true">
-              <h4>Жильё</h4>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <img class="benefits-card__icon" src="icons/home.svg" width="75" height="72" aria-hidden="true">
+              <h4 class="benefits-card__title">Жильё</h4>
+              <p class="benefits-card__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="icons/eat.svg" width="75" height="70" aria-hidden="true">
-              <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <img class="benefits-card__icon" src="icons/eat.svg" width="75" height="70" aria-hidden="true">
+              <h4 class="benefits-card__title">Еда</h4>
+              <p class="benefits-card__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </article>
           </li>
-          <li>
-            <article>
-              <img src="icons/souvenir.svg" width="64" height="77" aria-hidden="true">
-              <h4>Сувениры</h4>
-              <p>Не только китайского, но и местного производства!</p>
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <img class="benefits-card__icon" src="icons/souvenir.svg" width="64" height="77" aria-hidden="true">
+              <h4 class="benefits-card__title">Сувениры</h4>
+              <p class="benefits-card__text">Не только китайского, но и местного производства!</p>
             </article>
           </li>
         </ul>
       </div>
-      <div>
-        <div>
-          <div>
-            <img src="images/bridge.jpg" width="800" height="256" alt="мост">
+      <div class="benefits__block">
+        <div class="benefits__wrapper">
+          <div class="benefits__image-container">
+            <img class="benefits__image" src="images/bridge.jpg" width="800" height="256" alt="мост">
           </div>
-          <div>
-            <h3>Там есть мост дьявола</h3>
-            <p>- №2 -</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <div class="benefits__info">
+            <h3 class="benefits__title">Там есть мост дьявола</h3>
+            <p class="benefits__text">- №2 -</p>
+            <p class="benefits__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <ul>
-          <li>
-            <article>
-              <h4>Небольшая площадь</h4>
-              <p>- №3 -</p>
-              <p>все достопримечательности находятся очень близко</p>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <h4 class="benefits-card__title">Небольшая площадь</h4>
+              <p class="benefits-card__text">- №3 -</p>
+              <p class="benefits-card__text">все достопримечательности находятся очень близко</p>
             </article>
           </li>
-          <li>
-            <article>
-              <h4>Красивая дорога</h4>
-              <p>- №4 -</p>
-              <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <h4 class="benefits-card__title">Красивая дорога</h4>
+              <p class="benefits-card__text">- №4 -</p>
+              <p class="benefits-card__text">ехать в седону из лас-вегаса совсем не скучно!</p>
             </article>
           </li>
-          <li>
-            <article>
-              <h4>Мало туристов</h4>
-              <p>- №5 -</p>
-              <p>большинство едет в гранд каньон и толпится там</p>
+          <li class="benefits__item">
+            <article class="benefits-card">
+              <h4 class="benefits-card__title">Мало туристов</h4>
+              <p class="benefits-card__text">- №5 -</p>
+              <p class="benefits-card__text">большинство едет в гранд каньон и толпится там</p>
             </article>
           </li>
         </ul>
       </div>
     </section>
-    <section>
-      <h2>Зинтересовались?</h2>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <ul>
-          <li>
-            <label>
-              <input type="date" name="date" placeholder="24 апреля 2017 года">
-              <span>дата заезда:</span>
+    <section class="search">
+      <h2 class="search__title">Зинтересовались?</h2>
+      <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="search__list">
+          <li class="search__item">
+            <label class="search__label">
+              <input class="search__date" type="date" name="date" placeholder="24 апреля 2017 года">
+              <span class="search__date-text">дата заезда:</span>
             </label>
           </li>
-          <li>
-            <label>
-              <input type="date" name="date" placeholder="4 июля 2017 года">
-              <span>дата выезда</span>
+          <li class="search__item">
+            <label class="search__label">
+              <input class="search__date" type="date" name="date" placeholder="4 июля 2017 года">
+              <span class="search__date-text">дата выезда</span>
             </label>
           </li>
-          <li>
-            <label>
-              <span>взрослые:</span>
-              <button type="button">+</button>
-              <input type="umber" name="adults" placeholder="2">
-              <button type="button">-</button>
+          <li class="search__item">
+            <label class="search__label">
+              <span class="search__text">взрослые:</span>
+              <button class="search__button" type="button">+</button>
+              <input class="search__number" type="umber" name="adults" placeholder="2">
+              <button class="search__button" type="button">-</button>
             </label>
           </li>
-          <li>
-            <label>
-              <span>дети:</span>
-              <button type="button">+</button>
-              <input type="number" name="children" placeholder="0">
-              <button type="button">-</button>
+          <li class="search__item">
+            <label class="search__label">
+              <span class="search__text">дети:</span>
+              <button class="search__button" type="button">+</button>
+              <input class="search__number" type="number" name="children" placeholder="0">
+              <button class="search__button" type="button">-</button>
             </label>
           </li>
         </ul>
-        <button type="submit">найти</button>
+        <button class="search__button-submit" type="submit">найти</button>
       </form>
     </section>
   </main>
-  <footer>
-    <div>
-      <h2>как с нами связаться</h2>
-      <p>#Visitsedona</p>
-      <a href="tel:+7(495)6660166">
-        <span>ТЕЛ: +7(495) 666-01-66</span>
+  <footer class="page__footer">
+    <div class="connection">
+      <h2 class="connection__title">как с нами связаться</h2>
+      <p class="conection__text">#Visitsedona</p>
+      <a class="connection__link" href="tel:+7(495)6660166">
+        <span class="connection__phone">ТЕЛ: +7(495) 666-01-66</span>
       </a>
     </div>
-    <nav>
-      <h2>Социальные сети</h2>
-      <ul>
-        <li>
-          <a href="#" aria-label="перейти на страницу в твиттер">
-           <img src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
+    <nav class="social">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в твиттер">
+           <img class="social__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу в фейсбук">
-            <img src="icons/fb.svg" width="12" height="22" aria-hidden="true">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в фейсбук">
+            <img class="social__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="перейти на страницу в ютуб">
-            <img src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="перейти на страницу в ютуб">
+            <img class="social__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
           </a>
         </li>
       </ul>
     </nav>
-    <div>
-      <h2>Разработано:</h2>
-      <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на страницу интенсива">
-        <span>Website by</span>
-        <img src="icons/logo-htmlacademy.svg" width="115" height="41" alt="лого академии">
+    <div class="developed">
+      <h2 class="developed__title">Разработано:</h2>
+      <a class="developed__link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на страницу интенсива">
+        <span class="developed__text">Website by</span>
+        <img class="developed__icon" src="icons/logo-htmlacademy.svg" width="115" height="41" alt="лого академии">
       </a>
     </div>
   </footer>
