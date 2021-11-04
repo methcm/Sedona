@@ -8,29 +8,29 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo" href="#" aria-label="перейти на главную страницу">
-        <img class="page-header__logo-image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
+    <nav class="navigation">
+      <a class="logo" href="#" aria-label="перейти на главную страницу">
+        <img class="logo__image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
       </a>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу информация">
-            <span class="site-list__link-text">Информация</span>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу информация">
+            <span class="navigation__link-text">Информация</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу фото и видео">
-            <span class="site-list__link-text">Фото и видео</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу фото и видео">
+            <span class="navigation__link-text">Фото и видео</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу карты штата">
-            <span class="site-list__link-text">Карты штата</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу карты штата">
+            <span class="navigation__link-text">Карты штата</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу гостиницы">
-            <span class="site-list__link-text">Гостиницы</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу гостиницы">
+            <span class="navigation__link-text">Гостиницы</span>
           </a>
         </li>
       </ul>
@@ -67,7 +67,7 @@
           <legend class="filter__title">Тип жилья:</legend>
           <ul class="filter__list">
             <li class="filter__item">
-              <label class="filter__label">
+              <label class="filter__group">
                 <input class="filter__input" type="checkbox" name="hotel" checked>
                 <span class="filter__text">гостиница</span>
               </label>
@@ -89,10 +89,10 @@
         <fieldset class="filter__fieldset">
           <legend class="filter__title">стоимость в сутки (Р):</legend>
           <div class="filter__wrapper">
-            <p class="filter__text-wrapper">ОТ 0</p>
-            <p class="filter__text-wrapper">ДО 3000</p>
+            <p class="filter__text">ОТ 0</p>
+            <p class="filter__text">ДО 3000</p>
           </div>
-          <input class="filter__range" type="range" min="0" max="3000">
+          <input class="filter__range-slider" type="range" min="0" max="3000">
           <button class="filter__submit-button" type="submit">показать</button>
         </fieldset>
       </form>
@@ -100,99 +100,99 @@
     <section class="result">
       <div class="result__wrapper">
         <h2 class="visually-hidden">результат поиска</h2>
-        <p class="result__text-search">Найдено:3</p>
-        <p class="result__text-sorting">Сортировка</p>
+        <h4 class="result__title">Найдено:3</h4>
+        <p class="result__text">Сортировка</p>
       </div>
       <ul class="result__list">
         <li class="result__item">
-          <a class="result__link" href="#" aria-label="сортировать параметры по цене">
+          <a class="result__link-text" href="#" aria-label="сортировать параметры по цене">
             <span class="result__text">по цене</span>
           </a>
         </li>
         <li class="result__item">
-          <a class="result__link" href="#" aria-label=" сортировать парметры по типу">
+          <a class="result__link-text" href="#" aria-label=" сортировать парметры по типу">
             <span class="result__text">по типу</span>
           </a>
         </li>
         <li class="result__item">
-          <a class="result__link" href="#" aria-label="сортировать параметры по рейтингу">
+          <a class="result__link-text" href="#" aria-label="сортировать параметры по рейтингу">
             <span class="result__text">по рейтингу</span>
           </a>
         </li>
       </ul>
       <ul class="result__list-hotels">
-        <li class="result__item-hotels">
-          <article class="result-card">
-            <img class="result-card__image" src="images/amara-resort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
-            <div class="result-card__wrapper">
-              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
-                <span class="result-card__text-link">AMARA RESORT & SPA</span>
+        <li class="result__hotels">
+          <article class="hotel-card">
+            <img class="hotel-card__image" src="images/amara-resort.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+            <div class="hotel-card__wrapper">
+              <a class="hotel-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="hotel-card__link-text">AMARA RESORT & SPA</span>
               </a>
-              <p class="result-card__text">гостиница от 4000 р.</p>
-              <a class="result-card__info-link" href="#" aria-label="показать подробную информацию">
-                <span class="result-card__details">подробнее</span>
+              <p class="hotel-card__text">гостиница от 4000 р.</p>
+              <a class="hotel-card__info-link" href="#" aria-label="показать подробную информацию">
+                <span class="hotel-card__details">подробнее</span>
               </a>
-              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
-                <span class="result-card__reserv">забронировать</span>
+              <a class="hotel-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="hotel-card__reserv">забронировать</span>
               </a>
             </div>
-            <div class="result-card__grade-wrapper">
-              <div class="result-card__shape-wrapper">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="hotel-card__grade-wrapper">
+              <div class="hotel-card__shape-wrahotel
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p class="result-card__text-rating">рейтинг: 8,5</p>
+              <p class="hotel-card__text-rating">рейтинг: 8,5</p>
             </div>
           </article>
         </li>
         <li class="result__item-hotels">
-          <article class="result-card">
-            <img class="result-card__image" src="images/desert-quail.jpg" width="135" height="90" alt="DESERT QUAIL">
-            <div class="result-card__wrapper">
-              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
-                <span class="result-card__text-link">DESERT QUAIL INN</span>
+          <article class="hotel-card">
+            <img class="hotel-card__image" src="images/desert-quail.jpg" width="135" height="90" alt="DESERT QUAIL">
+            <div class="hotel-card__wrapper">
+              <a class="hotel-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="hotel-card__link-text">DESERT QUAIL INN</span>
               </a>
-              <p class="result-card__text">мотель от 3500 р.</p>
-              <a class="result-card__info-link" href="#" aria-label="показать подроную информацию">
-                <span class="result-card__details">подробнее</span>
+              <p class="hotel-card__text">мотель от 3500 р.</p>
+              <a class="hotel-card__info-link" href="#" aria-label="показать подроную информацию">
+                <span class="hotel-card__details">подробнее</span>
               </a>
-              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
-                <span class="result-card__reserv">забронировать</span>
+              <a class="hotel-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="hotel-card__reserv">забронировать</span>
               </a>
             </div>
-            <div class="result-card__grade-wrapper">
-              <div class="result-card__shape-wrapper">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="hotel-card__grade-wrapper">
+              <div class="hotel-card__shape-wrapper">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p class="result-card__text-rating">рейтинг: 8,9</p>
+              <p class="hotel-card__text-rating">рейтинг: 8,9</p>
             </div>
           </article>
         </li>
         <li class="result__item-hotels">
-          <article class="result-card">
-            <img class="result-card__image" src="images/villas-at-poco.jpg" width="135" height="90" alt="VILLAS AT POCO">
-            <div class="result-card__wrapper">
-              <a class="result-card__link" href="#" aria-label="перейти на страницу отеля">
-                <span class="result-card__text-link">VILLAS AT POCO DIABLO</span>
+          <article class="hotel-card">
+            <img class="hotel-card__image" src="images/villas-at-poco.jpg" width="135" height="90" alt="VILLAS AT POCO">
+            <div class="hotel-card__wrapper">
+              <a class="hotel-card__link" href="#" aria-label="перейти на страницу отеля">
+                <span class="hotel-card__link-text">VILLAS AT POCO DIABLO</span>
               </a>
-              <p class="result-card__text">апартаменты от 2000 р.</p>
-              <a class="result-card__info-link" href="#" aria-label="показать подробную информацию">
-                <span class="result-card__details">подробнее</span>
+              <p class="hotel-card__text">апартаменты от 2000 р.</p>
+              <a class="hotel-card__info-link" href="#" aria-label="показать подробную информацию">
+                <span class="hotel-card__details">подробнее</span>
               </a>
-              <a class="result-card__info-link" href="#" aria-label="забронировать отель">
-                <span class="result-card__reserv">забронировать</span>
+              <a class="hotel-card__info-link" href="#" aria-label="забронировать отель">
+                <span class="hotel-card__reserv">забронировать</span>
               </a>
             </div>
-            <div class="result-card__grape-wrapper">
-              <div class="result-card__shape-wrapper">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
-                <img class="result-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+            <div class="hotel-card__grape-wrapper">
+              <div class="hotel-card__shape-wrapper">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
+                <img class="hotel-card__spahe-icon" src="icons/shape.svg" width="17" height="18" aria-hidden="true">
               </div>
-              <p class="result-card__text-rating">рейтинг: 9,2</p>
+              <p class="hotel-card__text-rating">рейтинг: 9,2</p>
             </div>
           </article>
         </li>
@@ -203,26 +203,26 @@
     <div class="connection">
       <h2 class="connection__title">как с нами связаться</h2>
       <p class="conection__text">#Visitsedona</p>
-      <a class="connection__link" href="tel:+7(495)6660166">
+      <a class="connection__link-text" href="tel:+7(495)6660166">
         <span class="connection__phone">ТЕЛ: +7(495) 666-01-66</span>
       </a>
     </div>
-    <nav class="social">
+    <nav class="socials">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в твиттер">
-           <img class="social__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в твиттер">
+           <img class="socials__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в фейсбук">
-            <img class="social__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в фейсбук">
+            <img class="socials__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в ютуб">
-            <img class="social__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в ютуб">
+            <img class="socials__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
           </a>
         </li>
       </ul>

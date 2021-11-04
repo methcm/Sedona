@@ -8,29 +8,29 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a class="page-header__logo" href="#" aria-label="перейти на главную страницу">
-        <img class="page-header__logo-image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
+    <nav class="navigation">
+      <a class="logo" href="#" aria-label="перейти на главную страницу">
+        <img class="logo__image" src="icons/logo.svg" width="138" height="70" alt="лого седона">
       </a>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу информация">
-            <span class="site-list__link-text">Информация</span>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу информация">
+            <span class="navigation__link-text">Информация</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу фото и видео">
-            <span class="site-list__link-text">Фото и видео</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу фото и видео">
+            <span class="navigation__link-text">Фото и видео</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#" aria-label="перейти на страницу карты штата">
-            <span class="site-list__link-text">Карты штата</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#" aria-label="перейти на страницу карты штата">
+            <span class="navigation__link-text">Карты штата</span>
           </a>
         </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="hotels.html" aria-label="перейти на страницу гостиницы">
-            <span class="site-list__link-text">Гостиницы</span>
+        <li class="navigation__item">
+          <a class="navigation__link" href="hotels.html" aria-label="перейти на страницу гостиницы">
+            <span class="navigation__link-text">Гостиницы</span>
           </a>
         </li>
       </ul>
@@ -119,38 +119,38 @@
     <section class="search">
       <h2 class="search__title">Зинтересовались?</h2>
       <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="search__list">
-          <li class="search__item">
-            <label class="search__label">
-              <input class="search__date" type="date" name="date" placeholder="24 апреля 2017 года">
-              <span class="search__date-text">дата заезда:</span>
+      <form class="form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__date" type="date" name="date" placeholder="24 апреля 2017 года">
+              <span class="form__option-title">дата заезда:</span>
             </label>
           </li>
-          <li class="search__item">
-            <label class="search__label">
-              <input class="search__date" type="date" name="date" placeholder="4 июля 2017 года">
-              <span class="search__date-text">дата выезда</span>
+          <li class="form__item">
+            <label class="form__label">
+              <input class="form__date" type="date" name="date" placeholder="4 июля 2017 года">
+              <span class="form__option-title">дата выезда</span>
             </label>
           </li>
-          <li class="search__item">
-            <label class="search__label">
-              <span class="search__text">взрослые:</span>
-              <button class="search__button" type="button">+</button>
-              <input class="search__number" type="umber" name="adults" placeholder="2">
-              <button class="search__button" type="button">-</button>
+          <li class="form__item">
+            <label class="form__label">
+              <span class="foption-title">взрослые:</span>
+              <button class="form__button" type="button">+</button>
+              <input class="form__number" type="umber" name="adults" placeholder="2">
+              <button class="form__button" type="button">-</button>
             </label>
           </li>
-          <li class="search__item">
-            <label class="search__label">
-              <span class="search__text">дети:</span>
-              <button class="search__button" type="button">+</button>
-              <input class="search__number" type="number" name="children" placeholder="0">
-              <button class="search__button" type="button">-</button>
+          <li class="form__item">
+            <label class="form__label">
+              <span class="foption-title">дети:</span>
+              <button class="form__button" type="button">+</button>
+              <input class="form__number" type="number" name="children" placeholder="0">
+              <button class="form__button" type="button">-</button>
             </label>
           </li>
         </ul>
-        <button class="search__button-submit" type="submit">найти</button>
+        <button class="form__submit-button" type="submit">найти</button>
       </form>
     </section>
   </main>
@@ -162,22 +162,22 @@
         <span class="connection__phone">ТЕЛ: +7(495) 666-01-66</span>
       </a>
     </div>
-    <nav class="social">
+    <nav class="socials">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в твиттер">
-           <img class="social__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в твиттер">
+           <img class="socials__icon" src="icons/twitter.svg" width="17" height="15" aria-hidden="true">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в фейсбук">
-            <img class="social__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в фейсбук">
+            <img class="socials__icon" src="icons/fb.svg" width="12" height="22" aria-hidden="true">
           </a>
         </li>
-        <li class="social__item">
-          <a class="social__link" href="#" aria-label="перейти на страницу в ютуб">
-            <img class="social__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="перейти на страницу в ютуб">
+            <img class="socials__icon" src="icons/youtube.svg" width="20" height="16" aria-hidden="true">
           </a>
         </li>
       </ul>
