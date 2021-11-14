@@ -1,0 +1,33 @@
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.navigation a:hover {
+  color: #81B3D2;
+}
+
+.navigation__link {
+  color: #000000;
+  padding: 0 15px;
+}
+
+.navigation__link-text {
+  font-weight: bold;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap:wrap;
+  align-items: center;
+  width: 1127px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+  width: 100%;
+  margin-bottom: 60px;
+}
