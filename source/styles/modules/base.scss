@@ -1,7 +1,4 @@
-
-/*global*/
-
-body {
+.page-body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -10,27 +7,15 @@ body {
   line-height: 21px;
   color: #000000;
   text-transform: uppercase;
-  background-color:#FFFFFF;
 }
 
 a {
   text-decoration: none;
 }
 
-img {
-  // max-width: 100%;
-  // height: auto;
-}
 
 .page {
   height: 100%;
-}
-
-.page-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 
