@@ -6,6 +6,9 @@
 *.psd
 *.sublime*
 *.json
+*.css
+*.map
 node_modules/
 Thumbs.db
 !package.json
+!normalize.css

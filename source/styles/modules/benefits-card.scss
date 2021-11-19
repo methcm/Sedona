@@ -1,0 +1,28 @@
+.benefits-card__title {
+  font-size: 21px;
+  margin: 0 auto;
+  width: 120px;
+}
+
+.benefits-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 290px;
+}
+
+.benefits-card__text {
+  width: 300px;
+}
+
+.benefits-card__icon + .benefits-card__title {
+  margin-top: 30px;
+}
+
+.benefits-card__title + .benefits-card__text {
+  margin-top: 25px;
+}
+
+.benefits-card__text + .benefits-card__text {
+  margin-top: 25px;
+}
