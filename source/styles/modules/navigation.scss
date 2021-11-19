@@ -1,0 +1,29 @@
+.navigation {
+  margin: 0;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+.navigation__link:hover {
+  color: #81B3D2;
+}
+
+.navigation__link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #000000;
+  padding: 0 15px;
+}
+
+
+.navigation__item {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  width: 100%;
+  font-weight: bold;
+}
