@@ -6,25 +6,19 @@
 
 .benefits__wrapper {
   display: flex;
-  flex-direction: row;
-  background-color: #81B3D2;
-  width: 400px;
-  height: 256px;
-}
-
-.benefits__image {
-  width: 800px;
   height: 256px;
 }
 
 .benefits__title {
   margin-top: 45px;
-  margin-left: 140px;
+  margin-left: 130px;
   margin-right: 140px;
   font-size: 21px;
   line-height: 21px;
-  width: 120px;
+  width: 145px;
   height: 45px;
+  text-align: center;
+
 }
 
 .benefits__text {
@@ -39,9 +33,17 @@
 
 .benefits__list {
   display: flex;
-  flex-direction: row;
-
+  justify-content: space-between;
+  margin: 0;
+  padding: 65px;
 }
 
+.benefits__info {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+  width: 400px;
+}
 
-
+.benefits__list--theme--gray {
+  background-color: #EEEEEE;
+}
