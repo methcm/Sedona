@@ -1,31 +1,17 @@
-
 .welcome {
-  font-family: PT sans, sans-serif;
-  font-style: normal;
-  text-align: center;
-  text-transform: uppercase;
-
+  padding: 40px 340px;
 }
 
 .welcome__title {
-  width: 470px;
-  height: 80px;
   font-size: 21px;
   font-weight: bold;
   line-height: 26px;
-  margin: 0 auto;
-  padding-top: 42px;
   white-space: pre-wrap;
+  margin: 0 auto;
 }
 
 .welcome__text {
-  width: 520px;
-  font-size: 14px;
-  font-weight: normal;
   line-height: 26px;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  padding-top: 16px;
+  padding-top: 45px;
+  margin: 0;
 }
-
-

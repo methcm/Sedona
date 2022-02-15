@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", sans-serif;
+  text-align: center;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
@@ -18,8 +19,13 @@ a {
   height: 100%;
 }
 
-
-
-
-
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
