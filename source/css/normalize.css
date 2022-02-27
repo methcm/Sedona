@@ -352,3 +352,11 @@ ul {
   list-style: none;
   padding: 0;
   }
+
+.visually-hidden {
+  display: none;
+}
+
+.developed__title {
+  display: none;
+}
